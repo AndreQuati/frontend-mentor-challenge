@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125rem;
+  margin: 35px 0;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+/********** TOP SECTION **********/
+.top-section {
+  background-color: hsl(193, 100%, 97%);  /* Backup color if image doesn't load */
+  background-image: url("../images/bg-hero-desktop.svg");
+  background-repeat: no-repeat;
+  padding: 55px 80px 70px 80px;
+}
+
+/***** HEADER *****/
+.header {
+  position: relative;  /* Position must be relative/absolute for this container to be the reference of the button (absolute) */
+  margin-bottom: 75px;
+}
+
+.header-logo {
+  height: 30px;
+}
+
+.header-btn {
+  border: solid 1px gray;
+  background-color: white;
+  padding: 15px 66px;
+  position: absolute;
+  top: -9px; /* Positioning the button in a way it's center is alligned with the logo's center */
+  right: 0;
+}
+
+/***** CONTENT *****/
+.top-section-content {
+  overflow: hidden;  /** Must set this property on the container when a child element is using flow  * */
+}
+
+.huddle-app-img {
+  float: right;
+  width: 54%;
+}
+
+.top-text {
+  margin: 79px 0;
+  width: 40%;
+}
+
+.top-get-started-btn {
+  border: solid 1px gray;
+  background-color: hsl(322, 100%, 66%);
+  padding: 20px 70px;
+  display: inline-block;
+}
+
+/********** MIDDLE SECTION **********/
+.middle-section {
+  padding: 125px 95px 315px 95px;
+}
+
+/***** CONTENT *****/
+.middle-card-div {
+  border: solid gray 1px;
+  margin: 25px 0;
+  padding: 55px 45px 55px 120px;
+  overflow: hidden;
+}
+
+.card-img {
+  height: 320px;
+}
+
+.card-align-right {
+  float: right;
+}
+
+.card-text {
+  margin: 74.5px 0;
+  width: 45%;
+}
+
+.card-text p {
+  color: hsl(208, 11%, 55%);
+  margin: 0;
+}
+
+/********** BOTTOM SECTION **********/
+.bottom-section {
+  background-color: hsl(192, 100%, 9%);
+  padding: 190px 205px 95px 120px;
+}
+
+nav {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+}
+
+nav li {
+  margin: 20px 0;
+}
+
+nav li img {
+  float: left;
+}
+
+nav li p {
+  color: white;
+  font-size: 1rem;
+  padding-left: 15px;
+  margin: 25px 0;
+  overflow: hidden;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+
+.bottom-contacts-div {
+  width: 46%;
+  padding-right: 145px;
+  box-sizing: border-box; /* This makes the pading-right (in px) size fit inside the width (in %).
+                             If not set, the total size would be width + padding  */
+}
+
+
+
+/************** FOOTER **************/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
